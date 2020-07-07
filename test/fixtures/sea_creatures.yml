@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  value: 1
+  shadow: one
+  swimming_pattern: one
+
+two:
+  name: MyString
+  value: 1
+  shadow: two
+  swimming_pattern: two

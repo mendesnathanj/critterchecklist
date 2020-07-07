@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collectible: one
+  collectible_type: Collectible
+  month: one
+  hemisphere: MyString
+
+two:
+  collectible: two
+  collectible_type: Collectible
+  month: two
+  hemisphere: MyString

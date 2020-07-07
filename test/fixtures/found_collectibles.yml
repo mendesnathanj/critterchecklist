@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  collectible: one
+  collectible_type: Collectible
+  status: MyString
+
+two:
+  user: two
+  collectible: two
+  collectible_type: Collectible
+  status: MyString

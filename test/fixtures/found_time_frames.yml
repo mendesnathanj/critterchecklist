@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collectible: one
+  collectible_type: Collectible
+  time_frame: one
+
+two:
+  collectible: two
+  collectible_type: Collectible
+  time_frame: two

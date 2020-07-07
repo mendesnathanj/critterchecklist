@@ -1,0 +1,2 @@
+class SinglePartFossil < ApplicationRecord
+end
