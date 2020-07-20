@@ -1,4 +1,8 @@
 class Fish < ApplicationRecord
+  include Imageable
+
+  self.per_page = 10
+
   belongs_to :location
   belongs_to :shadow
 

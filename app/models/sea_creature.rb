@@ -1,4 +1,6 @@
 class SeaCreature < ApplicationRecord
+  include Imageable
+  
   belongs_to :shadow
   belongs_to :swimming_pattern
 

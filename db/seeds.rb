@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 puts 'Creating users...'
 User.create!(email: 'mendesnathanj@gmail.com', password: 'password', password_confirmation: 'password')
 
@@ -33,7 +25,7 @@ bugs.each do |id, bug|
   record.location = Location.find_or_create_by!(name: bug['location'])
 
 
-  # record.image.attach(io: File.open("#{__dir__}/data/imgs/bugs_small/#{bug['fileName']}"), filename: bug['fileName'])
+  record.image.attach(io: File.open("#{__dir__}/data/imgs/bugs_small/#{bug['fileName']}"), filename: bug['fileName'])
   record.save!
 
   bug['months'].each do |hemisphere, months|
@@ -56,7 +48,7 @@ fishes.each do |id, fish|
   record = Fish.new(name: fish['name'], value: fish['value'])
   record.location = Location.find_or_create_by!(name: fish['location'])
   record.shadow = Shadow.find_or_create_by!(size: fish['shadowSize'])
-  # record.image.attach(io: File.open("#{__dir__}/data/imgs/fish_small/#{fish['fileName']}"), filename: fish['fileName'])
+  record.image.attach(io: File.open("#{__dir__}/data/imgs/fish_small/#{fish['fileName']}"), filename: fish['fileName'])
   record.save!
 
   fish['months'].each do |hemisphere, months|
@@ -79,7 +71,7 @@ sea_creatures.each do |id, sea_creature|
   record = SeaCreature.new(name: sea_creature['name'], value: sea_creature['value'])
   record.shadow = Shadow.find_or_create_by!(size: sea_creature['shadowSize'])
   record.swimming_pattern = SwimmingPattern.find_or_create_by!(pattern: sea_creature['swimmingPattern'])
-  # record.image.attach(io: File.open("#{__dir__}/data/imgs/sea_creatures_small/#{sea_creature['fileName']}"), filename: sea_creature['fileName'])
+  record.image.attach(io: File.open("#{__dir__}/data/imgs/sea_creatures_small/#{sea_creature['fileName']}"), filename: sea_creature['fileName'])
   record.save!
 
   sea_creature['months'].each do |hemisphere, months|
@@ -100,7 +92,7 @@ albums.each do |id, album|
   puts "Creating #{album['name']}..."
 
   record = Album.new(name: album['name'], live_only: album['liveOnly'])
-  # record.image.attach(io: File.open("#{__dir__}/data/imgs/music/#{album['fileName']}"), filename: album['fileName'])
+  record.image.attach(io: File.open("#{__dir__}/data/imgs/music/#{album['fileName']}"), filename: album['fileName'])
   record.save!
 end
 
