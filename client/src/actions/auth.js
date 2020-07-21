@@ -15,11 +15,9 @@ export const login3 = user => dispatch => (
     body: JSON.stringify({ user })
   })
   .then(res => {
-    console.log(res);
     return res.json()
   })
   .then(json => {
-    console.log(json);
     dispatch(receiveUser(json))
   })
 );

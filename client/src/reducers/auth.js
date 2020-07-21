@@ -5,7 +5,6 @@ export default function auth(state = { user: null }, action) {
 
   switch (action.type) {
     case RECEIVE_USER:
-      console.log(action.payload);
       const user = action.payload.user;
       localStorage.setItem('token', action.payload.token);
 

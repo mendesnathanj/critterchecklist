@@ -6,7 +6,7 @@ class BugSerializer
 
   set_type :bugs
 
-  attributes :name, :value
+  attributes :name, :value, :found_month_ids, :time_frame_ids
 
   link :image_url
 

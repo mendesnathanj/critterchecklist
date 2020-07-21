@@ -9,6 +9,7 @@ module Imageable
   end
 
   def image_url
-    rails_blob_url(image, only_path: true)
+    rails_blob_path(image, only_path: true)
+    # image.service_url
   end
 end

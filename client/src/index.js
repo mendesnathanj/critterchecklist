@@ -9,9 +9,12 @@ import getPreloadedState from './utils/preloadedState';
 
 localStorage.removeItem('token');
 
+const store = configureStore(getPreloadedState());
+window.store = store;
+
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={configureStore(getPreloadedState())}>
+    <Provider store={store}>
       <Router>
         <App />
       </Router>

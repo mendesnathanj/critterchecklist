@@ -48,6 +48,7 @@ gem 'devise-jwt'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'fast_jsonapi'
 gem 'will_paginate', '~> 3.1.0'
+gem 'actionpack-action_caching'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

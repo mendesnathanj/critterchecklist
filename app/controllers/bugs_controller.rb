@@ -6,7 +6,7 @@ class BugsController < ApplicationController
              Bug.all.with_attached_image.includes(:location, :time_frames, :found_collectibles, found_months: [:month]).to_a
            end
 
-    render json: BugSerializer.new(bugs, include: [:location, :time_frames, :found_collectibles, :found_months]).serialized_json
+    render json: BugSerializer.new(bugs, include: [:location, :time_frames, :found_collectibles, :found_months]).serialized_json, cache: true
   end
 
   def show
