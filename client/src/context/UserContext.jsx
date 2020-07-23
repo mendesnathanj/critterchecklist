@@ -1,15 +1,14 @@
-import React from 'react';
-import { createContext } from 'react';
-import { useState } from 'react';
+import React, { createContext, useState } from 'react';
+import jwt_decode from 'jwt-decode';
 
 export const UserContext = createContext(null);
 
 export function UserProvider({ children }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(initialState());
 
-  function login(payload) {
-    localStorage.setItem('token', payload.token);
-    setUser(payload.user);
+  function login(token) {
+    localStorage.setItem('token', token);
+    setUser(jwt_decode(token));
   }
 
   function logout() {
@@ -21,5 +20,12 @@ export function UserProvider({ children }) {
     <UserContext.Provider value={{ user, login, logout }}>
       { children }
     </UserContext.Provider>
-  );
+  )
 };
+
+function initialState() {
+  const token = localStorage.getItem('token');
+  if (token) return jwt_decode(token);
+
+  return null;
+}
