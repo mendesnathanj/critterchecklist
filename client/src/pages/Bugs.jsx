@@ -7,11 +7,11 @@ export default function Bugs() {
   const bugs = useBugs();
   const foundCollectibles = useFoundCollectibles('bug');
 
-  console.log(foundCollectibles);
+  // console.log(foundCollectibles);
 
   if (bugs.length === 0) return <div>Loading...</div>;
 
-  const bugsHtml = bugs.map(bug => <BugCard key={bug.id} bug={bug} />);
+  const bugsHtml = bugs.map(bug => <BugCard key={bug.id} bug={bug} status={foundCollectibles[bug.id]} />);
 
   return (
     <div>
