@@ -5,14 +5,14 @@ export const UserContext = createContext(null);
 
 export function UserProvider({ children }) {
   const [user, setUser] = useState(initialState());
-
+  
   function login(token) {
     localStorage.setItem('token', token);
     setUser(jwt_decode(token));
   }
 
   function logout() {
-    localStorage.setItem('token', null);
+    localStorage.removeItem('token');
     setUser(null);
   }
 
@@ -25,7 +25,15 @@ export function UserProvider({ children }) {
 
 function initialState() {
   const token = localStorage.getItem('token');
-  if (token) return jwt_decode(token);
 
-  return null;
+  if (!token) return null;
+
+  const decoded = jwt_decode(token);
+
+  if (Date.now() / 1000 >= decoded.exp) {
+    localStorage.removeItem('token');
+    return null;
+  }
+
+  return decoded;
 }

@@ -1,16 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import Login from './pages/Login';
+import { AuthRoute, ProtectedRoute } from './utils/routes';
+import Bugs from './pages/Bugs';
+import Home from './pages/Home';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
-      <h1>hewwo i am the home page!!</h1>
-      <Router>
-        <Switch>
-          <Route path="/login" component={Login} />
-        </Switch>
-      </Router>
+      <Nav />
+      <Switch>
+        <AuthRoute path="/login" component={Login} />
+        <ProtectedRoute path="/bugs" component={Bugs} />
+        <ProtectedRoute path="/" component={Home} />
+      </Switch>
     </div>
   );
 }

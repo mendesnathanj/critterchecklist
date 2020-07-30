@@ -6,12 +6,13 @@ class BugSerializer
 
   set_type :bugs
 
-  attributes :name, :value, :found_month_ids, :time_frame_ids
+  attributes :name, :value, :image_url
 
-  link :image_url
+  attribute :months, &:found_month_ids
+  attribute :time_frames, &:time_frame_ids
+  attribute :location, &:location_id
 
   belongs_to :location
   has_many :found_months
   has_many :time_frames
-  has_many :found_collectibles
 end
