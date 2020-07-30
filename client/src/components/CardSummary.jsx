@@ -3,6 +3,7 @@ import CardSection from './CardSection';
 import CardTitle from './CardTitle';
 import CardValue from './CardValue';
 import CardIcon from './CardIcon';
+import CardStatus from './CardStatus';
 
 export default function CardSummary({ critter: { id, name, value, imageUrl }, status }) {
   return (
@@ -13,6 +14,7 @@ export default function CardSummary({ critter: { id, name, value, imageUrl }, st
       </CardSection>
       <CardSection>
         <CardIcon src={imageUrl} alt={name} />
+        <CardStatus id={id} initialStatus={status} collectibleType='Bug' />
       </CardSection>
     </div>
   )
