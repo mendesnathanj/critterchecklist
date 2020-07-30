@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Card({ children }) {
+
+export default function CardSection({ children }) {
   return (
     <div>
       { children }
