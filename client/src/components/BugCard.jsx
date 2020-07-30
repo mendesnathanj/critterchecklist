@@ -2,10 +2,10 @@ import React from 'react';
 import Card from './Card';
 import CardSummary from './CardSummary';
 
-export default function BugCard({ bug, status }) {
+export default function BugCard({ bug, statusData }) {
   return (
     <Card>
-      <CardSummary critter={bug} status={status} />
+      <CardSummary critter={bug} statusData={statusData} />
 
     </Card>
   )

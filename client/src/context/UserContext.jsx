@@ -5,9 +5,10 @@ export const UserContext = createContext(null);
 
 export function UserProvider({ children }) {
   const [user, setUser] = useState(initialState());
-  
+
   function login(token) {
     localStorage.setItem('token', token);
+    debugger;
     setUser(jwt_decode(token));
   }
 

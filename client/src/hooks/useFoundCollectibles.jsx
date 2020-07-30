@@ -9,7 +9,16 @@ export default function useFoundCollectibles(collectible_type = null) {
     fetchFoundCollectibles({ collectible_type })
     .then(res => {
       const found = {};
-      Object.values(normalize(res.data).foundCollectibles).forEach(foundCollectible => found[foundCollectible.attributes.collectibleId] = foundCollectible.attributes.status);
+      const normalizedData = normalize(res.data);
+
+      if (Object.keys(normalizedData).length === 0) {
+        setCollectibles({});
+        return;
+      }
+
+      const data = Object.values(normalizedData.foundCollectibles);
+
+      data.forEach(foundCollectible => found[foundCollectible.attributes.collectibleId] = { id: foundCollectible.id, status: foundCollectible.attributes.status })
       setCollectibles(found);
     });
   }, [collectible_type]);

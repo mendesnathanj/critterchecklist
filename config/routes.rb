@@ -17,7 +17,7 @@ Rails.application.routes.draw do
       resources :fish, only: [:index]
       resources :sea_creatures, only: [:index]
       resources :fossils, only: [:index]
-      resources :found_collectibles, only: [:index]
+      resources :found_collectibles
     end
   end
 end

@@ -8,14 +8,14 @@ class FoundCollectiblesController < ApplicationController
                      current_user.found_collectibles
                    end
 
-    render json: FoundCollectibleSerializer.new(collectibles)
+    render json: FoundCollectibleSerializer.new(collectibles).serialized_json
   end
 
   def create
     collectible = FoundCollectible.new(found_collectible_params.merge(user_id: current_user.id))
 
     if collectible.save
-      render json: FoundCollectibleSerializer.new(collectible)
+      render json: collectible
     else
       render json: collectible.errors.full_messages
     end
@@ -25,7 +25,17 @@ class FoundCollectiblesController < ApplicationController
     collectible = current_user.found_collectibles.find(params[:id])
 
     if collectible.update(found_collectible_params)
-      render json: FoundCollectibleSerializer.new(collectible)
+      render json: collectible
+    else
+      render json: collectible.errors.full_messages
+    end
+  end
+
+  def destroy
+    collectible = current_user.found_collectibles.find(params[:id])
+
+    if collectible.destroy
+      render json: {}
     else
       render json: collectible.errors.full_messages
     end
