@@ -10,4 +10,24 @@ class FoundCollectiblesController < ApplicationController
 
     render json: FoundCollectibleSerializer.new(collectibles)
   end
+
+  def create
+    collectible = FoundCollectible.new(found_collectible_params)
+
+    if collectible.save
+      render json: FoundCollectibleSerializer.new(collectible)
+    else
+      render json: collectible.errors.full_messages
+    end
+  end
+
+  def update
+
+  end
+
+  private
+
+  def found_collectible_params
+    params.require(:found_collectible).permit(:id, :collectible_type, :collectible_id, :status, :user_id)
+  end
 end
