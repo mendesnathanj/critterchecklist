@@ -6,3 +6,6 @@ export const mapParams = params => {
 
   return '?' + query;
 };
+
+export const apiUrl = endpoint => `${process.env.REACT_APP_API_URL}${endpoint}`;
+
