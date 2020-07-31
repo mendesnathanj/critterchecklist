@@ -6,7 +6,7 @@ export default function BugCard({ bug, statusData }) {
   return (
     <Card>
       <CardSummary critter={bug} statusData={statusData} />
-
+      
     </Card>
   )
 }

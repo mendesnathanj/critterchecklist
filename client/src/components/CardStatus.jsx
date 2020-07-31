@@ -29,7 +29,7 @@ export default function CardStatus({ id, statusData, collectibleType }) {
       }
 
     } catch(e) {
-      console.log(e);
+      return new Error();
     }
   }
 
