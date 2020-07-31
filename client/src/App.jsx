@@ -4,7 +4,7 @@ import Login from './pages/Login';
 import { AuthRoute, ProtectedRoute } from './utils/routes';
 import Bugs from './pages/Bugs';
 import Home from './pages/Home';
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 
 function App() {
   return (

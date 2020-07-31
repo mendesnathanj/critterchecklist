@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
-import { UserContext } from '../context/UserContext';
-import FormInput from "../components/FormInput";
-import { loginUser } from "../api/auth";
-import SubmitBtn from "../components/SubmitBtn";
+import { UserContext } from '../../context/UserContext';
+import FormInput from "../FormInput/FormInput";
+import { loginUser } from "../../api/auth";
+import SubmitBtn from "../Btn/SubmitBtn/SubmitBtn";
 
 export default function LoginForm() {
   const { login } = useContext(UserContext);

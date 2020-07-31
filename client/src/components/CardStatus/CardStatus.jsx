@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { createFoundCollectible, updateFoundCollectible, deleteFoundCollectible } from '../api/foundCollectibles';
+import { createFoundCollectible, updateFoundCollectible, deleteFoundCollectible } from '../../api/foundCollectibles';
 import { useContext } from 'react';
-import { UserContext } from '../context/UserContext';
+import { UserContext } from '../../context/UserContext';
 
 export default function CardStatus({ id, statusData, collectibleType }) {
   const [status, setStatus] = useState(statusData === undefined ? 'Not Found' : statusData.status);

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../context/UserContext';
-import NavItem from './NavItem';
+import { UserContext } from '../../context/UserContext';
+import NavItem from '../NavItem/NavItem';
 
 export default function Nav() {
   const { user, logout } = useContext(UserContext);

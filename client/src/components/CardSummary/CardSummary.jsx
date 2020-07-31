@@ -1,9 +1,9 @@
 import React from 'react';
-import CardSection from './CardSection';
-import CardTitle from './CardTitle';
-import CardValue from './CardValue';
-import CardIcon from './CardIcon';
-import CardStatus from './CardStatus';
+import CardSection from '../CardSection/CardSection';
+import CardTitle from '../CardTitle/CardTitle';
+import CardValue from '../CardValue/CardValue';
+import CardIcon from '../CardIcon/CardIcon';
+import CardStatus from '../CardStatus/CardStatus';
 
 export default function CardSummary({ critter: { id, name, value, imageUrl }, statusData }) {
   return (

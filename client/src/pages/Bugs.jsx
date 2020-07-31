@@ -1,8 +1,8 @@
 import React from 'react';
 import useBugs from '../hooks/useBugs';
 import useFoundCollectibles from '../hooks/useFoundCollectibles';
-import BugCard from '../components/BugCard';
-import CollectionLayout from '../components/CollectionLayout';
+import BugCard from '../components/BugCard/BugCard';
+import CollectionLayout from '../components/CollectionLayout/CollectionLayout';
 
 export default function Bugs() {
   const bugs = useBugs();

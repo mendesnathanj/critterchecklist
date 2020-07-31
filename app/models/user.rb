@@ -5,7 +5,7 @@ class User < ApplicationRecord
   has_many :found_collectibles
 
   def jwt_payload
-    { id: id, email: email }
+    { id: id, email: email, hemisphere: hemisphere }
   end
 end
 

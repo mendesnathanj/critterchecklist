@@ -8,7 +8,6 @@ export function UserProvider({ children }) {
 
   function login(token) {
     localStorage.setItem('token', token);
-    debugger;
     setUser(jwt_decode(token));
   }
 
