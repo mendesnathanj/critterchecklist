@@ -1,5 +1,6 @@
 import React from 'react';
 
-export default function CardTitle({ text }) {
-  return <h3>{ text }</h3>;
-}
+const CardTitle = ({ text }) =>
+  <h3>{ text }</h3>;
+
+export default CardTitle;

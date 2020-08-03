@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Btn = ({ value, className }) =>
-  <button className={className}>{ value }</button>
+const Btn = ({ value, variant }) =>
+  <button className={variant}>{ value }</button>
 
 export default Btn;

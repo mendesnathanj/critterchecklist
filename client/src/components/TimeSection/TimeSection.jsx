@@ -3,8 +3,9 @@ import CardSection from '../CardSection/CardSection';
 import TimeFrame from '../TimeFrame/TimeFrame';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-export default function TimeSection({ timeFrames }) {
-  const availableTimes = timeFrames.map((timeFrame, i) => <TimeFrame key={i} {...timeFrame} />);
+const TimeSection = ({ timeFrames }) => {
+  const availableTimes = timeFrames.map((timeFrame, i) =>
+    <TimeFrame key={i} {...timeFrame} />);
 
   return (
     <CardSection>
@@ -13,3 +14,5 @@ export default function TimeSection({ timeFrames }) {
     </CardSection>
   )
 }
+
+export default TimeSection;

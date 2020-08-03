@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { UserContext } from '../../context/UserContext';
 import NavItem from '../NavItem/NavItem';
 
-export default function Nav() {
+const Nav = () => {
   const { user, logout } = useContext(UserContext);
 
   let links;
@@ -29,3 +29,5 @@ export default function Nav() {
     </div>
   )
 }
+
+export default Nav;

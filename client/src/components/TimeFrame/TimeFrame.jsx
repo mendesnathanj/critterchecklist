@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TimeFrame({ start, end }) {
+const TimeFrame = ({ start, end }) => {
   if (start === 0 && end === 0) return <span>All Day</span>;
 
   const startText = start < 12 ? `${start} AM` : `${start % 12} PM`;
@@ -10,3 +10,5 @@ export default function TimeFrame({ start, end }) {
     <span>{ startText } - { endText }</span>
   )
 }
+
+export default TimeFrame;

@@ -6,17 +6,16 @@ import MonthSection from '../MonthSection/MonthSection';
 import TimeSection from '../TimeSection/TimeSection';
 import LocationSection from '../LocationSection/LocationSection';
 
-export default function BugCard({ bug, statusData }) {
-  const { months, timeFrames, location } = bug;
 
-  return (
-    <Card>
-      <CardSummary critter={bug} statusData={statusData} />
-      <CardInfo>
-        <MonthSection months={months} />
-        <TimeSection timeFrames={timeFrames} />
-        <LocationSection location={location} />
-      </CardInfo>
-    </Card>
-  )
-}
+const BugCard = ({ bug, statusData }) =>
+  <Card>
+    <CardSummary critter={bug} statusData={statusData} />
+    <CardInfo>
+      <MonthSection months={bug.months} />
+      <TimeSection timeFrames={bug.timeFrames} />
+      <LocationSection location={bug.location} />
+    </CardInfo>
+  </Card>
+
+
+export default BugCard;

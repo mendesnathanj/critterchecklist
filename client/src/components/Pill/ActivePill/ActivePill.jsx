@@ -1,6 +1,10 @@
 import React from 'react';
-import Pill from '../Pill/Pill';
+import Pill from '../Pill';
+import { active } from '../Pill.module.sass';
 
-export default function ActivePill({ text }) {
-  return <Pill text={text} variant='active' />
-}
+
+const ActivePill = ({ text }) =>
+  <Pill text={text} variant={active} />
+
+
+export default ActivePill;

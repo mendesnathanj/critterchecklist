@@ -9,3 +9,5 @@ export const mapParams = params => {
 
 export const apiUrl = endpoint => `${process.env.REACT_APP_API_URL}${endpoint}`;
 
+export const cn = (...args) =>
+  args.reduce((acc, cur) => `${acc} ${cur}`)

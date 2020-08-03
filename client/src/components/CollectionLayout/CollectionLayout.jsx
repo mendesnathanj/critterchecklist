@@ -1,9 +1,6 @@
 import React from 'react';
 
-export default function CollectionLayout({ children }) {
-  return (
-    <div>
-      { children }
-    </div>
-  )
-}
+const CollectionLayout = ({ children }) =>
+  <div>{ children }</div>
+
+export default CollectionLayout;

@@ -4,7 +4,7 @@ import FormInput from "../FormInput/FormInput";
 import { loginUser } from "../../api/auth";
 import SubmitBtn from "../Btn/SubmitBtn/SubmitBtn";
 
-export default function LoginForm() {
+const LoginForm = () => {
   const { login } = useContext(UserContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -31,5 +31,6 @@ export default function LoginForm() {
       </form>
     </div>
   )
-
 }
+
+export default LoginForm;

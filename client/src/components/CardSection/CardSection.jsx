@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function CardSection({ children }) {
-  return (
-    <div>
-      { children }
-    </div>
-  )
-}
+
+const CardSection = ({ children }) =>
+  <div>{ children }</div>
+
+
+export default CardSection;
