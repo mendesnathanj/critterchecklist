@@ -2,7 +2,6 @@ import React from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
 
-
 const Card = ({ children }) => {
   const container = useRef(null);
 
@@ -22,6 +21,5 @@ const Card = ({ children }) => {
     </div>
   )
 }
-
 
 export default Card;

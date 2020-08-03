@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Btn = ({ value, variant }) =>
-  <button className={variant}>{ value }</button>
+const Btn = ({ value, variant, clickHandler }) =>
+  <button className={variant} onClick={clickHandler}>{ value }</button>
 
 export default Btn;
