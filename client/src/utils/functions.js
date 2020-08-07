@@ -31,5 +31,14 @@ export const filterByLeavingThisMonth = (collection, hemisphere) =>
         .map(month => month.name)
 
         return months.includes(currMonth) && !months.includes(nextMonth);
-      }
-    )
+    })
+
+export const filterByArrivingThisMonth = (collection, hemisphere) =>
+  collection
+    .filter(item => {
+      const months = item.months
+        .filter(month => month.hemisphere === hemisphere)
+        .map(month => month.name)
+
+      return months.includes(currMonth) && !months.includes(prevMonth);
+    })

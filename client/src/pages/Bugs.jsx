@@ -6,7 +6,7 @@ import CollectionLayout from '../components/CollectionLayout/CollectionLayout';
 import Filter from '../components/Filter/Filter';
 import PageContainer from '../components/PageContainer/PageContainer';
 import TogglePill from '../components/Pill/TogglePill/TogglePill';
-import { filterByLocation, filterByLeavingThisMonth } from '../utils/functions';
+import { filterByLocation, filterByLeavingThisMonth, filterByArrivingThisMonth } from '../utils/functions';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../context/UserContext';
@@ -26,6 +26,7 @@ export default function Bugs() {
 
   console.log(bugs);
   console.log(filterByLeavingThisMonth(bugs, hemisphere));
+  console.log(filterByArrivingThisMonth(bugs, hemisphere));
   const applyFilters = () => {
 
   };
