@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "single-test": "react-scripts test --t ",
+    "single-test": "react-scripts test -t ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

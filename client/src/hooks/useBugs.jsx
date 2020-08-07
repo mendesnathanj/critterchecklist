@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchBugs } from '../api/bugs';
 import normalize from 'json-api-normalizer';
+import { apiUrl } from '../utils/functions';
 
 export default function useBugs() {
   const [bugs, setBugs] = useState([]);
@@ -15,6 +16,7 @@ export default function useBugs() {
       const bugs = Object.values(data.bugs).map(bug => {
         bug.attributes.id = bug.id;
         bug = bug.attributes;
+        bug.imageUrl = apiUrl(bug.imageUrl);
         bug.months = bug.months.map(id => data.foundMonths[id].attributes);
         bug.timeFrames = bug.timeFrames.map(id => data.timeFrames[id].attributes);
         bug.location = data.locations[bug.location].attributes.name;

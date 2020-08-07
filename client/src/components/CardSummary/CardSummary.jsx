@@ -1,20 +1,28 @@
 import React from 'react';
-import CardSection from '../CardSection/CardSection';
+import CardSummarySection from '../CardSummarySection/CardSummarySection';
 import CardTitle from '../CardTitle/CardTitle';
 import CardValue from '../CardValue/CardValue';
-import CardIcon from '../CardIcon/CardIcon';
-import CardStatus from '../CardStatus/CardStatus';
+import CollectibleImage from '../CollectibleImage/CollectibleImage';
+import CollectibleStatusPill from '../Pill/CollectibleStatusPill/CollectibleStatusPill';
+import { cn } from '../../utils/functions';
+import { dFlex, spaceBetween, alignBottom } from '../../styles/Display.module.sass';
+import { cardSummary, marginTop } from './CardSummary.module.sass';
+import Divider from '../Divider/Divider';
 
 const CardSummary = ({ critter: { id, name, value, imageUrl }, statusData }) =>
-  <div>
-    <CardSection>
+  <div className={cn(dFlex, spaceBetween, cardSummary)}>
+    <CardSummarySection>
       <CardTitle text={name} />
       <CardValue value={value} />
-    </CardSection>
-    <CardSection>
-      <CardIcon src={imageUrl} alt={name} />
-      <CardStatus id={id} statusData={statusData} collectibleType='Bug' />
-    </CardSection>
+    </CardSummarySection>
+    <CardSummarySection override={alignBottom}>
+      <CollectibleImage src={imageUrl} alt={name} />
+      <CollectibleStatusPill
+        id={id}
+        statusData={statusData}
+        collectibleType='Bug' />
+      <Divider additionalClasses={marginTop} />
+    </CardSummarySection>
   </div>
 
 export default CardSummary;

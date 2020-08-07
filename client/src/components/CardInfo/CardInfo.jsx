@@ -1,9 +1,9 @@
 import React from 'react';
+import { cardInfo } from './CardInfo.module.sass';
 
-export default function CardInfo({ children }) {
-  return (
-    <div>
-      { children }
-    </div>
-  )
-}
+const CardInfo = ({ children }) =>
+  <div className={ cardInfo }>
+    { children }
+  </div>
+
+export default CardInfo;

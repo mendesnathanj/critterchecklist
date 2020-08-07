@@ -1,6 +1,7 @@
 import React from 'react';
+import { collectionLayout } from './CollectionLayout.module.sass';
 
 const CollectionLayout = ({ children }) =>
-  <div>{ children }</div>
+  <div className={collectionLayout}>{ children }</div>
 
 export default CollectionLayout;

@@ -1,5 +1,5 @@
 class BugsController < ApplicationController
-  # before_action :index, :set_headers
+  before_action :index, :set_headers
 
   def index
     bugs = if params[:page]

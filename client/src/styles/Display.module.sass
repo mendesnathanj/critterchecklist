@@ -1,5 +1,15 @@
 .dFlex
   display: flex
   flex-wrap: wrap
-  width: 250px
 
+  &.spaceBetween
+    justify-content: space-between
+
+  &.alignCenter
+    align-items: center
+
+  &.alignBottom
+    align-items: flex-end
+
+.fullWidth
+  width: 100%

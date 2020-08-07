@@ -22,4 +22,11 @@ describe('Image', () => {
   it('should apply a given alt attribute', () => {
     expect(wrapper.find({ alt: 'My alt' }).length).toBe(1);
   })
+
+  it('should apply the variant as a class', () => {
+    const wrapper = shallow(<Image src="test.jpg" alt="Alt" variant="test-class" />);
+    const img = wrapper.find('.test-class');
+
+    expect(img.length).toBe(1);
+  })
 })

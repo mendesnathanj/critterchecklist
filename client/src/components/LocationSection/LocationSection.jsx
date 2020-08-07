@@ -1,11 +1,11 @@
 import React from 'react';
-import CardSection from '../CardSection/CardSection';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import CardInfoSection from '../CardInfoSection/CardInfoSection';
 
 const LocationSection = ({ location }) =>
-  <CardSection>
+  <CardInfoSection>
     <SectionTitle text='Location' />
     <span>{ location }</span>
-  </CardSection>
+  </CardInfoSection>
 
 export default LocationSection;
