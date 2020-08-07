@@ -14,4 +14,12 @@ class Bug < ApplicationRecord
   has_many :found_collectibles, as: :collectible
 
   has_one_attached :image
+
+  def northern_months
+    months.where('found_months.hemisphere = ?', 'north')
+  end
+
+  def southern_months
+    months.where('found_months.hemisphere = ?', 'south')
+  end
 end
