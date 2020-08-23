@@ -6,10 +6,10 @@ import CollectionLayout from '../components/CollectionLayout/CollectionLayout';
 import PageContainer from '../components/PageContainer/PageContainer';
 import BugFilter from '../components/Filter/BugFilter/BugFilter';
 import { useState } from 'react';
-import { filterByLeavingThisMonth, filterByArrivingThisMonth } from '../utils/functions';
+import * as filterFuncs from '../utils/filters';
+import { monthlyFilters } from '../utils/constants';
 import { useContext } from 'react';
 import { UserContext } from '../context/UserContext';
-import { useMemo } from 'react';
 
 export default function Bugs() {
   const bugs = useBugs();
@@ -18,31 +18,37 @@ export default function Bugs() {
   const { user: { hemisphere } } = useContext(UserContext);
 
   const [filters, setFilters] = useState({
-    leavingThisMonth: false,
-    arrivingThisMonth: false,
-
+    ...monthlyFilters,
+    currentLocation: 'Any',
   });
 
-  const leavesThisMonthBugs = useMemo(() =>
-    filterByLeavingThisMonth(bugs, hemisphere),
-  [bugs, hemisphere]);
-
-  const arrivingThisMonthBugs = useMemo(() =>
-  filterByArrivingThisMonth(bugs, hemisphere),
-  [bugs, hemisphere])
+  console.log(filters);
 
   if (bugs.length === 0) return <div>Loading...</div>;
 
+  // console.log(bugs);
 
+  const locations = Array.from(new Set(bugs.map(bug => bug.location)));
+
+  if (filters.currentLocation !== 'Any') {
+    locations.unshift('Any');
+    locations.splice(locations.indexOf(filters.currentLocation), 1);
+  }
+
+  console.log(filters.currentLocation);
   const filtered = (bugs) => {
     if (filters.leavingThisMonth)
-      bugs = leavesThisMonthBugs;
-      // bugs = filterByLeavingThisMonth(bugs, hemisphere);
+      bugs = filterFuncs.filterByLeavingThisMonth(bugs, hemisphere);
     if (filters.arrivingThisMonth)
-      bugs = arrivingThisMonthBugs;
+      bugs = filterFuncs.filterByArrivingThisMonth(bugs, hemisphere);
+    if (filters.availableThisMonth)
+      bugs = filterFuncs.filterByFoundThisMonth(bugs, hemisphere);
+    if (filters.currentLocation !== 'Any')
+      bugs = filterFuncs.filterByLocation(bugs, filters.currentLocation);
 
     return bugs;
   }
+
 
 
   const bugsHtml = filtered(bugs).map(bug =>
@@ -50,7 +56,10 @@ export default function Bugs() {
 
   return (
     <PageContainer>
-      <BugFilter filters={filters} setFilters={setFilters} />
+      <BugFilter
+        filters={filters}
+        setFilters={setFilters}
+        locations={locations} />
       <CollectionLayout>
         {bugsHtml}
       </CollectionLayout>

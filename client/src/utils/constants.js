@@ -16,3 +16,9 @@ export const nextMonth = monthNames[
 export const prevMonth = monthNames[
   ((monthNames.indexOf(currMonth) - 1) + monthNames.length) % monthNames.length
 ];
+
+export const monthlyFilters = {
+  leavingThisMonth: false,
+  arrivingThisMonth: false,
+  availableThisMonth: false
+};

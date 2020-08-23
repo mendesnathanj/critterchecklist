@@ -1,29 +1,17 @@
 import React from 'react';
 import Filter from '../Filter';
-import TogglePill from '../../Pill/TogglePill/TogglePill';
-import Wrapper from '../../Wrapper/Wrapper';
+import MonthFilters from '../../MonthFilters/MonthFilters';
+import LocationFilter from '../../LocationFilter/LocationFilter';
 
-const BugFilter = ({ filters, setFilters }) => {
-
-  const leavesHandler = () =>
-    setFilters({ ...filters, leavingThisMonth: !filters.leavingThisMonth });
-
-  const arrivesHandler = () =>
-    setFilters({ ...filters, arrivingThisMonth: !filters.arrivingThisMonth });
-
-  // const notFoundHandler = () =>
+const BugFilter = ({ filters, setFilters, locations }) => {
 
   return (
     <Filter>
-      <Wrapper>
-        <TogglePill text='Leaving this month' handler={leavesHandler} />
-      </Wrapper>
-      <Wrapper>
-        <TogglePill text='Arriving this month' handler={arrivesHandler} />
-      </Wrapper>
-      <Wrapper>
-        {/* <TogglePill text='Not found right now' handler={} /> */}
-      </Wrapper>
+      <MonthFilters filters={filters} setFilters={setFilters} />
+      <LocationFilter
+        filters={filters}
+        setFilters={setFilters}
+        locations={locations} />
     </Filter>
   )
 }
