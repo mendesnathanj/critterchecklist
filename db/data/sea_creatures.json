@@ -1,0 +1,1144 @@
+{
+  "1": {
+    "name": "Seaweed",
+    "value": 600,
+    "shadowSize": "Large",
+    "swimmingPattern": "Stationary",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Oct", "Nov", "Dec"],
+      "southern": ["Jan", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    },
+    "fileName": "seaweed.png"
+  },
+  "2": {
+    "name": "Sea grapes",
+    "value": 900,
+    "shadowSize": "Small",
+    "swimmingPattern": "Stationary",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": ["Jun", "Jul", "Aug", "Sep"],
+      "southern": ["Jan", "Feb", "Mar", "Dec"]
+    },
+    "fileName": "sea_grapes.png"
+  },
+  "3": {
+    "name": "Sea cucumber",
+    "value": 500,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": ["Jan", "Feb", "Mar", "Apr", "Nov", "Dec"],
+      "southern": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+    },
+    "fileName": "sea_cucumber.png"
+  },
+  "4": {
+    "name": "Sea pig",
+    "value": 10000,
+    "shadowSize": "Small",
+    "swimmingPattern": "Quick long lunges",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["May", "Jun", "Aug"]
+    },
+    "fileName": "sea_pig.png"
+  },
+  "5": {
+    "name": "Sea star",
+    "value": 900,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow short lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "sea_star.png"
+  },
+  "6": {
+    "name": "Sea urchin",
+    "value": 1700,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    "fileName": "sea_urchin.png"
+  },
+  "7": {
+    "name": "Slate pencil urchin",
+    "value": 2000,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate consistent movement",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    "fileName": "slate_pencil_urchin.png"
+  },
+  "8": {
+    "name": "Sea anemone",
+    "value": 500,
+    "shadowSize": "Large",
+    "swimmingPattern": "Stationary",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "sea_anemone.png"
+  },
+  "9": {
+    "name": "Moon jellyfish",
+    "value": 600,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": ["Jan", "Feb", "Mar"]
+    },
+    "fileName": "moon_jellyfish.png"
+  },
+  "10": {
+    "name": "Sea slug",
+    "value": 600,
+    "shadowSize": "Tiny",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "sea_slug.png"
+  },
+  "11": {
+    "name": "Pearl oyster",
+    "value": 2800,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "pearl_oyster.png"
+  },
+  "12": {
+    "name": "Mussel",
+    "value": 1500,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Dec"]
+    },
+    "fileName": "mussel.png"
+  },
+  "13": {
+    "name": "Oyster",
+    "value": 1100,
+    "shadowSize": "Small",
+    "swimmingPattern": "Moderate short lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["Mar", "Apr", "May", "Jun", "Jul", "Aug"]
+    },
+    "fileName": "oyster.png"
+  },
+  "14": {
+    "name": "Scallop",
+    "value": 1200,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Slow long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "scallop.png"
+  },
+  "15": {
+    "name": "Whelk",
+    "value": 1000,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "whelk.png"
+  },
+  "16": {
+    "name": "Turban shell",
+    "value": 1000,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Mar",
+        "Apr",
+        "May",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["Mar", "Apr", "May", "Jun", "Sep", "Oct", "Nov"]
+    },
+    "fileName": "turban_shell.png"
+  },
+  "17": {
+    "name": "Abalone",
+    "value": 2000,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate consistent movement",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Dec"]
+    },
+    "fileName": "abalone.png"
+  },
+  "18": {
+    "name": "Gigas giant clam",
+    "value": 15000,
+    "shadowSize": "Huge",
+    "swimmingPattern": "Quick long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    "fileName": "gigas_giant_clam.png"
+  },
+  "19": {
+    "name": "Chambered nautilus",
+    "value": 1800,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Slow",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "southern": ["Mar", "Apr", "May", "Sep", "Oct", "Nov", "Dec"]
+    },
+    "fileName": "chambered_nautilus.png"
+  },
+  "20": {
+    "name": "Octopus",
+    "value": 1200,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "octopus.png"
+  },
+  "21": {
+    "name": "Umbrella octopus",
+    "value": 6000,
+    "shadowSize": "Small",
+    "swimmingPattern": "Quick long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Mar",
+        "Apr",
+        "May",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "southern": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"]
+    },
+    "fileName": "umbrella_octopus.png"
+  },
+  "22": {
+    "name": "Vampire squid",
+    "value": 10000,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate long lunges",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug"
+      ],
+      "southern": ["Jan", "Feb", "Nov", "Dec"]
+    },
+    "fileName": "vampire_squid.png"
+  },
+  "23": {
+    "name": "Firefly squid",
+    "value": 1400,
+    "shadowSize": "Tiny",
+    "swimmingPattern": "Slow",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Mar",
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "southern": ["Sep", "Oct", "Nov", "Dec"]
+    },
+    "fileName": "firefly_squid.png"
+  },
+  "24": {
+    "name": "Gazami crab",
+    "value": 2200,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate long lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "southern": ["Jan", "Feb", "Mar", "Apr", "May", "Dec"]
+    },
+    "fileName": "gazami_crab.png"
+  },
+  "25": {
+    "name": "Dungeness crab",
+    "value": 1900,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Moderate consistent movement",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
+    },
+    "fileName": "dungeness_crab.png"
+  },
+  "26": {
+    "name": "Snow crab",
+    "value": 6000,
+    "shadowSize": "Large",
+    "swimmingPattern": "Quick short lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+    },
+    "fileName": "snow_crab.png"
+  },
+  "27": {
+    "name": "Red king crab",
+    "value": 8000,
+    "shadowSize": "Large",
+    "swimmingPattern": "Quick",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Nov",
+        "Dec"
+      ],
+      "southern": ["May", "Jun", "Jul", "Aug", "Sep"]
+    },
+    "fileName": "red_king_crab.png"
+  },
+  "28": {
+    "name": "Acorn barnacle",
+    "value": 600,
+    "shadowSize": "Tiny",
+    "swimmingPattern": "Stationary",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "acorn_barnacle.png"
+  },
+  "29": {
+    "name": "Spider crab",
+    "value": 12000,
+    "shadowSize": "Huge",
+    "swimmingPattern": "Quick",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Mar",
+        "Apr"
+      ],
+      "southern": [
+        "Sep",
+        "Oct"
+      ]
+    },
+    "fileName": "spider_crab.png"
+  },
+  "30": {
+    "name": "Tiger prawn",
+    "value": 3000,
+    "shadowSize": "Small",
+    "swimmingPattern": "Moderate consistent movement",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Dec"
+      ]
+    },
+    "fileName": "tiger_prawn.png"
+  },
+  "31": {
+    "name": "Sweet shrimp",
+    "value": 1400,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug"
+      ]
+    },
+    "fileName": "sweet_shrimp.png"
+  },
+  "32": {
+    "name": "Mantis shrimp",
+    "value": 2500,
+    "shadowSize": "Small",
+    "swimmingPattern": "Quick short lunges",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "mantis_shrimp.png"
+  },
+  "33": {
+    "name": "Spiny lobster",
+    "value": 5000,
+    "shadowSize": "Large",
+    "swimmingPattern": "Fast",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Apr",
+        "May",
+        "Jun"
+      ]
+    },
+    "fileName": "spiny_lobster.png"
+  },
+  "34": {
+    "name": "Lobster",
+    "value": 4500,
+    "shadowSize": "Large",
+    "swimmingPattern": "Quick",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Apr",
+        "May",
+        "Jun",
+        "Dec"
+      ],
+      "southern": [
+        "Jun",
+        "Jul",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "lobster.png"
+  },
+  "35": {
+    "name": "Giant isopod",
+    "value": 12000,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Quick long lunges",
+    "times": [
+      {
+        "start": 9,
+        "end": 16
+      },
+      {
+        "start": 21,
+        "end": 4
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr"
+      ]
+    },
+    "fileName": "giant_isopod.png"
+  },
+  "36": {
+    "name": "Horseshoe crab",
+    "value": 2500,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Quick short lunges",
+    "times": [
+      {
+        "start": 21,
+        "end": 4
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar"
+      ]
+    },
+    "fileName": "horseshoe_crab.png"
+  },
+  "37": {
+    "name": "Sea pineapple",
+    "value": 1500,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow short lunges",
+    "times": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "months": {
+      "northern": [
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Sep",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "sea_pineapple.png"
+  },
+  "38": {
+    "name": "Spotted garden eel",
+    "value": 1100,
+    "shadowSize": "Small",
+    "swimmingPattern": "Slow consistent movement",
+    "times": [
+      {
+        "start": 4,
+        "end": 21
+      }
+    ],
+    "months": {
+      "northern": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct"
+      ],
+      "southern": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "fileName": "spotted_garden_eel.png"
+  },
+  "39": {
+    "name": "Flatworm",
+    "value": 700,
+    "shadowSize": "Tiny",
+    "swimmingPattern": "Slow short movement",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Aug",
+        "Sep"
+      ],
+      "southern": [
+        "Feb",
+        "Mar"
+      ]
+    },
+    "fileName": "flatworm.png"
+  },
+  "40": {
+    "name": "Venus' flower basket",
+    "value": 5000,
+    "shadowSize": "Medium",
+    "swimmingPattern": "Quick long lunges",
+    "times": [
+      {
+        "start": 16,
+        "end": 9
+      }
+    ],
+    "months": {
+      "northern": [
+        "Jan",
+        "Feb",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "southern": [
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug"
+      ]
+    },
+    "fileName": "venus_flower_basket.png"
+  }
+}
